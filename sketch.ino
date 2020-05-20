@@ -101,28 +101,20 @@ void processState(){
 }
 
 bool checkingCode(){
-  Serial.println(question);
-  Serial.println("check");
   long step1 = question + EMRINE_KEYA;
   long step2 = step1 * step1;
-  Serial.println(step2);
   String step3 = String(step2);
   if (step3.length() >= 2){
     step3.remove(step3.length()-2, 2);
   }
-  Serial.println(step3);
   String step4 = step3.length() >= 4 ? step3.substring(step3.length() - 4) : step3;
-  Serial.println(step4);
   long step5 = step4.toInt() + EMRINE_KEYB;
   long step6 = step5 * step5;
-  Serial.println(step6);
   String step7 = String(step6);
   if (step7.length() >= 2){
     step7.remove(step7.length()-2, 2);
   }
-  Serial.println(step7);
   String step8 = step7.length() >= 4 ? step7.substring(step7.length() - 4) : step7;
-  Serial.println(step8);
   return step8.toInt() == codeStr.toInt();
 }
 
@@ -168,8 +160,8 @@ void showUnlockedView(){
   uint8_t x4 = lockX+56; uint8_t y4 = lockY+20;
   uint8_t x5 = lockX+51; uint8_t y5 = lockY+15;
   tft.fillTriangle(x0, y0, x1, y1, x2, y2, ST77XX_BLACK);
-  tft.fillTriangle(x0, y0, x2, y2, x3,y3, ST77XX_BLACK);
-  tft.fillTriangle(x2, y2, x3, y3,x4, y4, ST77XX_BLACK);
+  tft.fillTriangle(x0, y0, x2, y2, x3, y3, ST77XX_BLACK);
+  tft.fillTriangle(x2, y2, x3, y3, x4, y4, ST77XX_BLACK);
   tft.fillTriangle(x2, y2, x4, y4, x5, y5, ST77XX_BLACK);
 
   //draw text
@@ -178,7 +170,6 @@ void showUnlockedView(){
   tft.setTextSize(1);
   tft.println(UNLOCKED_TEXT);
 }
-
 void showQRCodeInstructions(){
     tft.fillScreen(ST77XX_BLACK);
     int initHeight = tft.height()/2 - (7 + 3 + 7 + 3 + 7 + 3 + 7)/2;
