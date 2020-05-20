@@ -1,6 +1,6 @@
-# Emrine Arduino
+# emrine.com on Arduino
 
-Integration of [Emrine](https://emrine.com/) QR Code based access control solution on Arduino using a ST7735 1.44" TFT screen and a 4x4 membrane keypad.
+Integration of [emrine.com](https://emrine.com/) QR Code based access control solution on Arduino using a ST7735 1.44" TFT screen and a 4x4 membrane keypad.
 
 ### [checkout the video](https://www.youtube.com/watch?v=QKLvgKy5jTE)
 
@@ -8,9 +8,9 @@ Arduino Uno          |  Arduino Mini
 :-------------------------:|:-------------------------:
 ![uno](https://user-images.githubusercontent.com/5183022/82349530-81656100-99fa-11ea-8de3-e4d7b5c0b9d6.jpg) | ![mini](https://user-images.githubusercontent.com/5183022/82349532-81fdf780-99fa-11ea-8c25-c37ec30ff510.jpg)
 
-## What is Emrine ?
+## What is emrine.com ?
 
-[Emrine](https://emrine.com/) is a QR Code based access control solution used to open electronic lockers, turn-off alarms, rent bicycles, ...
+[emrine.com](https://emrine.com/) is a QR Code based access control solution used to open electronic lockers, turn-off alarms, rent bicycles, ...
 
 ## Arduino UNO wiring
 
